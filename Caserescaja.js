@@ -1,18 +1,21 @@
 import React from 'react'
 
-const Caserescaja = ({Caja}) => {
-    console.log(Caja, "si llega el color")
+const Caserescaja = ({Tarea}) => {
+    console.log(Tarea, "si llega la Tarea")
     return (
     <div>
         <p> Tareas realizadas</p>
         < div className="Conteiner"> { 
-            Caja.map((item, index)=>(
+            Tarea.map((item, index)=>(
                 <div key={index} style={{ 
-                    item}} >
-
+                    item}} 
+                    //
+                    >
+               
                 </div>
+                
             ))
-            
+           
          }
          </div>
     </div>
