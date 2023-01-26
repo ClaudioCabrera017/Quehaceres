@@ -4,13 +4,13 @@ import Caceres from './Caceres';
 import Caserescaja from './Caserescaja';
 
 function App() {
-  const [Caja,setCaja]=useState([])
-  console.log ( Caja)
+  const [Tarea,setTarea]=useState([])
+  console.log ( Tarea)
 
   return (
     <div className="App">
-      <Caceres Caja={Caja} setCaja={setCaja}   />
-      <Caserescaja  Caja={Caja}/>
+      <Caceres Tarea={Tarea} setTarea={setTarea}   />
+      <Caserescaja  Tarea={Tarea}/>
     </div>
   );
 }
