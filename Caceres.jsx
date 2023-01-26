@@ -1,22 +1,22 @@
 import React, {useState} from  'react';
 
-const Caceres = ({Caja, setCaja}) => {
+const Caceres = ({Tarea, setTarea}) => {
 
-    const [caja, setcaja] = useState("")
+    const [tarea, settarea] = useState("")
     
 
-    const createcaja = (e) => {
+    const createtarea = (e) => {
         e.preventDefault();
-        const newUser =  {caja} 
-        console.log("Welcome", newUser);
-        setCaja([...Caja, caja])
+        const newUser =  {tarea} 
+        console.log(newUser);
+        setTarea([...Tarea, tarea])
     };
     return (
-        <form onSubmit={ createcaja }>
+        <form onSubmit={ createtarea }>
     <div>
         <label>Tareas: </label> 
         <button type="submit" >Add</button>
-            <input type="text" onChange={ (e) => setcaja(e.target.value) } />
+            <input type="text" onChange={ (e) => settarea(e.target.value) } />
             
 
     </div>
